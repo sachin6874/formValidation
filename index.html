@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+
+
+
+  </head>
+  <body>
+    <div class="alert alert-success" id="alert" role="alert">
+      Your Form is Successfully Submitted
+    </div>
+   <div class="form-validation" style="display:flex;align-items: center;justify-content: center;">
+    <form id="form" class="form" style="width:50%;">
+        <div class="mb-3">
+            <label for="userName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="userName">
+            <div class="invalid-feedback">
+                Write Your Full Name!
+              </div>
+          </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
+          <div class="invalid-feedback">
+            Enter a valid email address!
+          </div>
+        </div>
+        
+        <div class="mb-3">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="text" class="form-control" id="phoneNumber">
+          <div class="invalid-feedback">
+            Enter a valid 10 digit Phone Number!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password">
+          <div class="invalid-feedback">
+            Enter a Strong Password(1 capital letter, 1 small, 1 number and 1 special symbol at least)!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="passwordConfirm" class="form-label">Confirm Password</label>
+          <input type="password" class="form-control" id="passwordConfirm">
+          <div class="invalid-feedback">
+            Password Don't Match!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="dateOfBirth" class="form-label">Date Of Birth (DD/MM/YYYY)</label>
+          <input type="Date" class="form-control" id="dateOfBirth">
+          <div class="invalid-feedback">
+            Age Should greater then 18
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="Gender" class="form-label">State</label>
+          <select class="form-select" id="Gender" required>
+            <option selected disabled value="">Gender...</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+          </select>
+          <div class="invalid-feedback">
+            Males Could Not Fill This Form!
+          </div></div>
+        <button type="submit" class="btn btn-primary submit">Submit</button>
+      </form>
+   </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</html>
